@@ -1,0 +1,8 @@
+[any]
+path = "~/.config/wallpapers/horizon.jpg"
+#duration = "60m"
+#sorting = "random"
+mode = "center"
+exec = "~/.config/wpaperd/refresh_pywal.sh"
+#group = 1
+recursive = false
