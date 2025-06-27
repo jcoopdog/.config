@@ -1,7 +1,9 @@
 lua require("config.lazy")
+set number
 set relativenumber
 set mousemodel=extend
 set softtabstop=4
+set tabstop=4
 set shiftwidth=4
 set expandtab
 set listchars=eol:↴,tab:│·,space:·
