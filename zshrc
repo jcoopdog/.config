@@ -18,8 +18,8 @@ compinit
 #PROMPT=' %F{blue}%~%f λ '
 #RPROMPT='$vcs_info_msg_0_%F{green}%*%f'
 
-(cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
+#(cat ~/.cache/wal/sequences &)
+#source ~/.cache/wal/colors-tty.sh
 
 
 ### Added by Zinit's installer
