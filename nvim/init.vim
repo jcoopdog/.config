@@ -25,10 +25,11 @@ inoremap <S-cr> <Esc>o
 vnoremap <Tab> >
 vnoremap <S-Tab> <
 
-tnoremap <Esc> <C-\><C-n>
 
-nnoremap <C-S> <cmd>ToggleTerm direction=float size=40<CR>
+"tnoremap <Esc> <C-\><C-n>
+tnoremap <C-s> <C-\><C-n><cmd>ToggleTerm direction=float size=40<CR>
+nnoremap <C-s> <cmd>ToggleTerm direction=float size=40<CR>i
 
 "Hyprlang LSP
-lua vim.api.nvim_create_autocmd({'BufEnter', 'BufWinEnter'}, { pattern = {"*.hl", "hypr*.conf"}, callback = function(event) vim.lsp.start { name = "hyprlang", cmd = {"hyprls"}, root_dir = vim.fn.getcwd(), } end })
-lua vim.filetype.add({ pattern = { [".*/hypr/.*%.conf"] = "hyprlang" }, })
+"lua vim.api.nvim_create_autocmd({'BufEnter', 'BufWinEnter'}, { pattern = {"*.hl", "hypr*.conf"}, callback = function(event) vim.lsp.start { name = "hyprlang", cmd = {"hyprls"}, root_dir = vim.fn.getcwd(), } end })
+"lua vim.filetype.add({ pattern = { [".*/hypr/.*%.conf"] = "hyprlang" }, })
